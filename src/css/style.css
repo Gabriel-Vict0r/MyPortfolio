@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&family=Poppins&display=swap');
-@import url("https://cdnjs.cloudfire.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&family=Poppins:wght@100;200;300;400&display=swap");
 
 * {
   margin: 0;
@@ -10,12 +9,12 @@ body {
   color: white;
 }
 nav a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.logo { 
+.logo {
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -23,30 +22,30 @@ nav a {
 nav li a:hover {
   color: #03dac6;
 }
-nav a { 
+nav a {
   font-size: 1.2rem;
 }
-nav { 
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 13vh;
 }
-.nav-list { 
+.nav-list {
   list-style: none;
   display: flex;
   z-index: 2;
 }
-.nav-list li { 
+.nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
 }
-.mobile-menu { 
+.mobile-menu {
   display: none;
   cursor: pointer;
   z-index: 100;
 }
-.mobile-menu div { 
+.mobile-menu div {
   width: 32px;
   height: 2px;
   background-color: rgb(255, 255, 255);
@@ -55,7 +54,7 @@ nav {
 }
 
 @media (max-width: 999px) {
-  body { 
+  body {
     overflow-x: hidden; /*esconde o que ultrapassa a borda*/
   }
   .nav-list {
@@ -76,7 +75,7 @@ nav {
     margin-left: 0;
     opacity: 0;
   }
-  .mobile-menu { 
+  .mobile-menu {
     display: block;
   }
   .nav-list.active {
@@ -84,18 +83,18 @@ nav {
   }
 
   @keyframes navLinkFade {
-    from { 
+    from {
       opacity: 0;
       transform: translateX(50px);
     }
-    to { 
+    to {
       opacity: 1;
       transform: translateX(0);
     }
   }
 }
 .mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);  
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
 .mobile-menu.active .line2 {
   opacity: 0;
@@ -123,13 +122,13 @@ header {
   opacity: 0.5;
   animation: zoom 25s;
 }
-@keyframes zoom { 
-    0%{ 
-        transform: scale(1.3);
-    }
-    100%{ 
-        transform: scale(1);
-    }
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .banner {
   font-family: "Nunito", sans-serif;
@@ -140,11 +139,10 @@ header {
 }
 
 .banner h1 {
-  
   font-size: 4rem;
   text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
   line-height: 5.5rem;
-  
+
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
 }
@@ -152,20 +150,21 @@ header {
   font-size: 3rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   font-weight: 200;
-  
-  
+
   animation: moveBanner 1s 0.7s forwards;
   opacity: 0;
 }
 .banner span {
   color: #03dac6;
 }
+.banner a {
+  color: white;
+}
 
 .banner button {
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.1rem;
-
   margin-top: 2rem;
   color: white;
   border: #03dac6 solid 3px;
@@ -187,11 +186,285 @@ header {
   background: linear-gradient(to right, #6dd5ed, #03dac6);
 }
 @keyframes moveBanner {
-    0%{ 
-        transform: translateY(10rem) rotateY(-30deg);
-    }
-    100%{ 
-        transform: translateY(0) rotateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+.image-about img {
+  width: 100%;
+}
+.about {
+  text-align: center;
+  margin: 4%;
+  margin-right: 100px;
+}
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  border-bottom: 7px solid #03dac6;
+  display: inline-block;
+}
+h3 {
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+.content-about {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  align-items: center;
+}
+
+.text {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+span {
+  color: #03dac6;
+}
+.btn {
+  letter-spacing: 0.1rem;
+  border-radius: 7px;
+  font-weight: 500;
+  border: #03dac6 solid 3px;
+  text-decoration: none;
+  transition: 1s all ease;
+  color: white;
+  margin-right: 12px;
+}
+.CV {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.social-media {
+  display: inline-block;
+  align-content: baseline;
+  margin-top: 4%;
+}
+.social-media a {
+  padding: 1rem;
+  color: white;
+}
+.btn:hover {
+  color: black;
+  background: #03dac6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.icons {
+  display: inline-block;
+  color: #03dac6;
+}
+.banner .icons {
+  animation: moveBanner 1s 0.9s forwards;
+  opacity: 0;
+}
+i {
+  font-size: 1.8rem;
+  transition: 0.4s all ease;
+}
+.icons i:hover {
+  transform: scale(1.2);
+}
+.banner .icons i:hover {
+  transform: scale(1.1);
+}
+.info-skills {
+  display: none;
+  margin-bottom: 15px;
+}
+.skills {
+  text-align: center;
+  margin-top: 6%;
+  background-color: rgba(255, 255, 255, 0.089);
+  padding: 4%;
+}
+.content-skills {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  align-items: center;
+}
+.container-footer {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 2%;
+  text-align: center;
+  margin: 0;
+  background-color: #000;
+}
+.skills-progress {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.text-container {
+  display: flex;
+}
+.text-container i {
+  margin-right: 20px;
+}
+.skill i {
+  color: #03dac6;
+}
+.giro {
+  transform: rotate(180deg);
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.bar {
+  text-align: left;
+}
+.bar .info {
+  margin-bottom: 10px;
+}
+.bar .info span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  background-color: #121212;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #03dac6;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 70%;
+}
+.progress-line.javascript span {
+  width: 60%;
+}
+.progress-line.git span {
+  width: 80%;
+}
+.progress-line.php span {
+  width: 70%;
+}
+.progress-line.mysql span {
+  width: 80%;
+}
+.progress-line.nodejs span {
+  width: 50%;
+}
+.progress-line.figma span {
+  width: 90%;
+}
+.progress-line.adobexd span {
+  width: 50%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after {
+  position: absolute;
+  content: "80%";
+  right: 0;
+  top: -35px;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  background: #000;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "70%";
+}
+.progress-line.javascript span::after {
+  content: "60%";
+}
+.progress-line.git span::after {
+  content: "80%";
+}
+.progress-line.php span::after {
+  content: "70%";
+}
+.progress-line.mysql span::after {
+  content: "80%";
+}
+.progress-line.nodejs span::after {
+  content: "50%";
+}
+.progress-line.figma span::after {
+  content: "90%";
+}
+.progress-line.adobexd span::after {
+  content: "50%";
 }

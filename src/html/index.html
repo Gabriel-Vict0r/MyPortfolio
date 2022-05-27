@@ -23,70 +23,242 @@
       sizes="16x16"
       href="../images/favicon-16x16.png"
     />
-    <link rel="manifest" href="../images/site.webmanifest" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Portfólio</title>
+    <script>
+
+</script>
   </head>
   <body>
     <div class="container">
       <header>
-      <nav>
-        <a class="logo" href="/src/html/index.html">Portfólio</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <nav>
+          <a class="logo" href="/src/html/index.html">Portfólio</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="/">projetos</a></li>
+            <li><a href="/">contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="img-wrapper">
+          <img
+            src="../images/initial-banner.jpg"
+            alt="imagem com códigos de programação"
+          />
         </div>
-        <ul class="nav-list">
-          <li><a href="/">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="/">Skills</a></li>
-          <li><a href="/">projetos</a></li>
-          <li><a href="/">contato</a></li>
-        </ul>
-      </nav>
-      
-      <div class="img-wrapper">
-        <img src="../images/initial-banner.jpg" alt="imagem com códigos de programação" />
+        <div class="banner">
+          <h1>
+            Desenvolvedor Web &<br />
+            Designer Front-end
+          </h1>
+          <p>Gabriel Victor</p>
+          <button>Saiba mais</button>
+          <div class="icons">
+            <a href="#" class=""
+              ><i class="fa-brands fa-3x fa-fw fa-github"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-fw fa-3x fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-fw fa-3x fa-instagram"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="about">
+        <h2 id="sobre">Sobre</h2>
+        <div class="content-about">
+          <div class="image-about">
+            <img
+              src="../images/undraw_code_review_re_woeb (1).svg"
+              alt="Ilustração de um Desenvolvedor"
+            />
+          </div>
+          <div class="text">
+            <h3>Eu sou gabriel Victor, <span>Desenvolvedor Web</span></h3>
+            <p>
+              Meu nome é Gabriel Victor da Silva. Tenho 19 anos e moro na cidade
+              de Barreiras, município do estado da Bahia. Atualmente estou
+              fazendo o curso técnico de Informática, no
+              <abbr title="Instituto Federal da Bahia">IFBA</abbr> - campus
+              Barreiras.
+            </p>
+            <p>
+              Sou uma pessoa dedicada e focada nas atividades que me são
+              atribuídas. Também gosto de aprender coisas novas e relacionar com
+              os conhecimentos que já possuo. Alguns dos meus hobbies são: ouvir
+              música; desenhar; jogar jogos eletrônicos; jogar futebol; assistir
+              filmes, séries, animes e partidas de futebol.
+            </p>
+            <p>
+              Sobre a minha experiência profissional, eu tive a oportunidade de
+              estagiar na empresa Barreiras Informática, no setor de instalação
+              e e manutenção de computadores durante 7 meses. No entanto, tenho
+              me preparado para assumir um cargo de Desenvolvedor Web a fim de
+              conseguir meu primeiro contato profissional com a área e pôr em
+              prática meus conhecimentos. Nesse sentido, estou pronto para lidar
+              com novos desafios e aprender com os mesmos.
+            </p>
+            <div class="social-media">
+              <a
+                href="../docs/CV_Gabriel Victor da Silva de Souza.pdf"
+                class="btn CV"
+                target="_blank"
+                >Ver currículo</a
+              >
+
+              <a
+                download
+                href="../docs/CV_Gabriel Victor da Silva de Souza.pdf"
+                class="btn down"
+              >
+                <i class="fa-solid fa-fw fa-download"></i
+              ></a>
+              <div class="icons">
+                <a href="#" class=""
+                  ><i class="fa-brands fa-fw fa-github"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-fw fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-fw fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="banner">
-        
-        <h1>Desenvolvedor Web &<br> Designer Front-end</h1>
-        <p>Gabriel Victor</p>
-        <button>Saiba mais</button>
-      </div>
-      
-    </header>
-    <div class="about">
-    <h2 id="sobre">Sobre</h2>
-    <p>Quem eu sou</p>
-      <div class="content-about">
-        <div class="image-about">
-        <img src="" alt="Foto de Gabriel Victor">
-      </div>
-      <div class="text-about">
-        <h3>Eu sou gabriel Victor, Desenvolvedor Web</h3>
-        <p>
-          Meu nome é Gabriel Victor da Silva. Tenho 19 anos e moro na cidade de Barreiras, município do estado da Bahia. 
-          Atualmente estou fazendo o curso técnico de Informática, no <abbr title="Instituto Federal da Bahia">IFBA</abbr> - campus Barreiras.
+
+      <div class="skills">
+        <h2>Skills</h2>
+        <div class="content-skills">
+        <div class="text">
+          <h3>Minhas habilidades</h3>
+          <p>
+            Por meio de alguns cursos e workshops digitais, obtive conhecimento
+            em criações audiovisuais, programação web (que inclui tecnologias
+            tanto do back-end quanto do front-end) e Montagem e Manutenção de
+            computadores. De 2018 a 2019 realizei um curso de C#, do básico ao
+            avançado, onde utilizei a linguagem C# juntamente com a estrutura
+            WPF para criar aplicativos cliente do windows. Em 2020 participei do
+            workshop da Rocketset, onde construímos uma aplicação web/mobile
+            usando React, Node e React Native.
           </p>
-          <p>Sou uma pessoa dedicada e focada nas atividades que me são atribuídas. Também gosto de aprender coisas novas e relacionar com os 
-          conhecimentos que já possuo. Alguns dos meus hobbies são: ouvir música; desenhar; jogar jogos eletrônicos; jogar futebol; assistir filmes,
-          séries, animes e partidas de futebol. 
-        </p>
-        <p>
-          Sobre a minha experiência profissional, eu tive a oportunidade de estagiar na empresa Barreiras Informática, no setor de instalação e
-          e manutenção de computadores durante 7 meses. No entanto, tenho me preparado para assumir um cargo de Desenvolvedor Web a fim de conseguir
-          meu primeiro contato profissional com a área e pôr em prática meus conhecimentos. Nesse sentido, estou pronto para lidar com novos desafios
-          e aprender com os mesmos.
-        </p>
-        <button><a href="../docs/CV_Gabriel Victor da Silva de Souza.pdf" target="_blank">Currículo</a></button>
-        <button> <a download href="../docs/CV_Gabriel Victor da Silva de Souza.pdf"> Baixar</a></button>
+          <p>
+            Atualmente, estou desenvolvendo uma aplicação Web para o campus onde
+            frequento, com o intuito de automatizar e facilitar os serviços do
+            setor. Desta forma, estou pondo em prática meus conhecimentos em
+            tecnologias como HTML, CSS, Javascript, PHP, MySql e a biblioteca
+            React.
+          </p>
+          <p>
+            Também, possuo conhecimentos breves em Figma e Git e GitHub, obtidos
+            através de forma autodidata.
+          </p>
+        </div>
+        <!--inicio da aba de skills-->
+        
+        <div class="skills-progress">
+          <div class="skill" id="skill1" onclick="giro1()">
+            <div class="text-container">
+            <i class="fa-solid fa-code"></i>
+            <p>Front-end</p>
+          </div>
+            <i class="fa-solid fa-angle-down arrow1"></i>
+          </div>
+          <div class="info-skills" id="info-skills1">
+          <div class="bar">
+            <div class="info">
+              <span>HTML5</span>
+            </div>
+            <div class="progress-line html"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>CSS3</span>
+            </div>
+            <div class="progress-line css"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Javascript</span>
+            </div>
+            <div class="progress-line javascript"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Git e GitHub</span>
+            </div>
+            <div class="progress-line git"><span></span></div>
+          </div>
+          </div>
 
+          <div class="skill" id="skill2" onclick="giro2()">
+            <div class="text-container">
+            <i class="fa-solid fa-code"></i>
+            <p>Back-end</p>
+          </div>
+            <i class="fa-solid fa-angle-down arrow2"></i>
+            
+          </div>
+          <div class="info-skills" id="info-skills2">
+            <div class="bar">
+              <div class="info">
+                <span>PHP</span>
+              </div>
+              <div class="progress-line php"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MySQL</span>
+              </div>
+              <div class="progress-line mysql"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Node.Js</span>
+              </div>
+              <div class="progress-line nodejs"><span></span></div>
+            </div>
+          
+            <!--fim da aba de skills-->
+          </div>
+          <div class="skill" id="skill3" onclick="giro3()">
+            <div class="text-container">
+            <i class="fa-solid fa-code"></i>
+            <p>UX/UI Design</p>
+          </div>
+            <i class="fa-solid fa-angle-down arrow3" ></i>
+          </div>
+          <div class="info-skills" id="info-skills3">
+            <div class="bar">
+              <div class="info">
+                <span>Figma</span>
+              </div>
+              <div class="progress-line figma"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Adobe XD</span>
+              </div>
+              <div class="progress-line adobexd"><span></span></div>
+            </div>
+            </div>
       </div>
-      </div>
-  </div>
+</div>
+
+
     </div>
-
+    <footer class="container-footer">
+      Criado por Gabriel Victor | &copy;2022 All rights reserved.
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c2363c17c5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/mobile-navbar.js"></script>
+    <script src="../js/skills.js"></script>
   </body>
 </html>
